@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-container {
+    display: flex;
+}
+
+#leftArt{
+    width: 40%;
+    height: auto;
+    background-color: rgb(212, 174, 124);
+}
+
+#rightMain {
+    width: 60%;
+    height: auto;
+}
