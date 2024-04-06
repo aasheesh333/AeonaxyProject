@@ -43,7 +43,7 @@ body {
     width: 100%; /* Set width to 100% to make it fill the parent */
     max-width: 500px; /* Example maximum width */
     padding: 20px; /* Add padding for spacing */
-    border: 1px solid #ccc; /* Example border */
+    /*border: 1px solid #ccc;  Example border */
     box-sizing: border-box;
     margin: 0 auto; /* Center horizontally */
     height: auto;
@@ -95,13 +95,13 @@ form .inp-item {
     font-family: 'Mona Sans';
     font-weight: bold;
     font-size: 32px;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
 }
 
 .label {
     position: absolute;
     bottom: 50px;
-    margin-left: 7px;
+    margin-left: px;
     font-family: Lusitana, serif;
     font-size: 18px;
     line-height: 26px;
@@ -122,13 +122,17 @@ form .inp-item {
     font-family: 'Mona Sans';
     color: white;
     font-weight: bold;
+    margin-top: 0px;
+    position: absolute;
+    top: calc(100% + -10px);
 }
 
 .privacyText {
     font-weight: 400;
     color: black;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 20px;
+    font-family: 'Mona Sans';
 }
 
 #privacyCheck {
@@ -141,10 +145,18 @@ form .inp-item {
     align-items: center;
     justify-content: space-between;
     margin-top: -30px;
+    margin-bottom: 0px
 }
 
 .captchaText {
-    margin-bottom: 50px;
+    top: 50px;
+    width: 100%;
+    position: relative;
+    bottom: -0px;
+    font-size: 0.8em;
+    font-family: 'Mona Sans';
+    width: 80%;
+    display: inline-block;
 }
 
 #name {
@@ -157,7 +169,6 @@ form .inp-item {
     border-radius: 8px;
     background-color: rgb(221, 218, 218);
     font-size: 1em;
-
 }
 
 #Username {
