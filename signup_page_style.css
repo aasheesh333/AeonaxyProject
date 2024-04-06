@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('Mona-Sans.woff2') format('woff2 supports variations'),
+      url('Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+
 body {
     margin: 0px;
     padding: 0px;
@@ -6,22 +16,187 @@ body {
 #main-container {
     display: flex;
     height: 100vh;
-    width: 40vh;
-}
+    }
 
-#leftArt{
-    width: 40vh;
+#leftArt {
+    width: 60vh;
     height: 100vh;
-    background-color: rgb(212, 174, 124);
+    background-color: #f2d184;
     display: flex;
     flex-direction: column;
+    color: #a58235;
+    
 }
 
 #rightMain {
-    width: 60vh;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: relative; /* Add position relative to the parent container */
 }
+
+#subRight {
+    width: 100%; /* Set width to 100% to make it fill the parent */
+    max-width: 500px; /* Example maximum width */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Example border */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center horizontally */
+    height: auto;
+    
+}
+
+form .inp-item {
+    margin-bottom: 70px;
+    position: relative;
+}
+
 
 #creditText {
    margin-top: auto;
+   margin-bottom: 50px;
+   margin-left: 50px;
+}
+
+#creditText a {
+    color: #a58235;
+    
+}
+
+#logo {
+    height: 40px;
+    margin-top:70px;
+    padding-bottom: 25px;
+}
+
+#quote {
+    margin-left: 50px;
+    padding-top:0px;
+}
+
+#quote h1 {
+    font-size: 28px;
+    font-family: 'Mona Sans';
+    font-weight: bold;
+    line-height: 0.6;
+}
+
+.signinText {
+    position: absolute; /* Set position to absolute */
+    top: 30px; /* Adjust top position as needed */
+    right: 35px; /* Adjust right position as needed */
+}
+
+#rightMain h1 {
+    font-family: 'Mona Sans';
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 65px;
+}
+
+.label {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 7px;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #050505;
+    cursor: text;
+    transition: transform .2s ease-in-out;
+    font-family: 'Mona Sans';
+    font-weight: bold;
+}
+
+ .btn {
+    width: 200px;
+    height: 38px;
+    background-color: #ea4b8b;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Mona Sans';
+    color: white;
+    font-weight: bold;
+}
+
+.privacyText {
+    font-weight: 400;
+    color: black;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+#privacyCheck {
+    transform: scale(1.8); /* Increase the scale of the checkbox */
+    margin-bottom: 0px;
+}
+
+.checkBoxDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.captchaText {
+    margin-bottom: 50px;
+}
+
+#name {
+    width: 200px;
+    font-family: 'Mona Sans';
+    padding: 10px;
+    height: 25px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(221, 218, 218);
+    font-size: 1em;
+
+}
+
+#Username {
+    width: 200px;
+    font-family: 'Mona Sans';
+    padding: 10px;
+    border: none;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgb(221, 218, 218);
+    font-size: 1em;
+
+
+}
+
+#userEmail {
+    width: 440px;
+    font-family: 'Mona Sans';
+    padding: 10px;
+    height: 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(221, 218, 218);
+}
+
+#userPass {
+    width: 440px;
+    font-family: 'Mona Sans';
+    font-size: 1em;
+    padding: 10px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(221, 218, 218);
+}
+
+#existsText {
+    color: red;
+    margin-bottom: 50px;
+    display: none;
 }

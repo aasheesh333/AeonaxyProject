@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up to Drbl</title>
     <link rel="stylesheet" href="signup_page_style.css">
+    <link rel="preload" href="Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
 </head>
+
 <body>
     <div id="main-container">
-    <div id="leftArt">
-        <img src="logo.svg" alt="logo" height="auto">
-        <div id="quote">
-            <h1>Discover the worlds top</h1>
-            <h1>Designer & Creatives.</h1>
+        <div id="leftArt">
+            <div id="quote">
+                <img src="logo.svg" alt="logo" height="auto" id="logo">
+                <h1>Discover the world's top</h1>
+                <h1>Designer & Creatives.</h1>
+            </div>
+            <p id="creditText">Art by <a href="#">Peter Tarka</a></p>
         </div>
-        <p id="creditText">Art by <a href="#">Peter Tarka</a></p>
-    </div>
 
 
-    <div id="rightMain">
-        <span>Already a member? <a href="#">Sign In</a></span>
-        <h2>Sign up to Dribble</h2>
-        <p id="existsText">• Username has Already been taken</p>
-        <form action="signup_process.php" method="post">
-            <label for="name">Name</label>
-            <input type="text" required id="name" name="name" placeholder="Enter full name...">
-            <label for="Username">Username</label>
-            <input type="text" required id="Username" name="Username" placeholder="Username...">
-            <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" name="userEmail" required placeholder="example@site.com">
-            <label for="userPass">Password</label>
-            <input type="password" id="userPass" name="userPass" required placeholder="6+ characters">
-            <input type="checkbox" id="privacyCheck" required name="privacyCheck">
-            <label for="privacyCheck">Creating an account means you're okay with our <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and our default <a href="#">Notification Settings.</a></label>
-            <input type="button" value="Create Account">
-        </form>
-        <span>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</span>
+        <div id="rightMain">
+            <div id="subRight">
+                <span class="signinText">Already a member? <a href="#">Sign In</a></span>
+                <h1>Sign up to Dribble</h1>
+                <p id="existsText">• Username has Already been taken</p>
+                <form action="signup_process.php" method="post">
+                    <div class="inp-item inline">
+                        <label for="name" class="label">Name</label>
+                        <input type="text" class="input-text" required id="name" name="name" placeholder="Enter full name...">
+
+                        <label for="Username" class="label">Username</label>
+                        <input type="text" class="input-text" required id="Username" name="Username" placeholder="Username...">
+                    </div>
+
+
+                    <div class="inp-item">
+                        <label for="userEmail" class="label">Email</label>
+                        <input type="email" class="input-text" id="userEmail" name="userEmail" required placeholder="example@site.com">
+                    </div>
+                    <div class="inp-item">
+                        <label for="userPass" class="label">Password</label>
+                        <input type="password" class="input-text" id="userPass" name="userPass" required placeholder="6+ characters">
+                    </div>
+                    <div class="inp-item checkBoxDiv">
+                        <input type="checkbox"  class="input-text" id="privacyCheck" required name="privacyCheck">
+                        <span for="privacyCheck" class="privacyText">Creating an account means you're okay with our <a href="#">Terms of
+                                Service</a>, <a href="#">Privacy Policy</a>, and our default <a href="#">Notification
+                                Settings.</a></span>
+                            </div>
+
+                        <div class="inp-item">
+                            <input type="button" class="btn" value="Create Account">
+                        </div>
+                </form>
+                <span class="captchaText">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a
+                        href="#">Terms of Service</a> apply.</span>
+            </div>
         </div>
+
     </div>
 </body>
+
 </html>
